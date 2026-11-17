@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <meta name="theme-color" content="#191D27" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="premium.css" />
   <script src="script.js" defer></script>
 </head>
 
 <body>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- NAVBAR -->
   <header class="navbar" id="navbar">
@@ -45,13 +48,15 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-image"></div>
+      <div class="hero-image" data-parallax="0.12"></div>
       <div class="hero-shade"></div>
+      <span class="hero-orb orb-1"></span>
+      <span class="hero-orb orb-2"></span>
 
       <div class="container hero-content">
         <div class="eyebrow light-eyebrow">
           <span class="eyebrow-line"></span>
-          DIGITAL THINKING. REAL-WORLD IMPACT.
+          PROLOGUE · DIGITAL THINKING. REAL-WORLD IMPACT.
         </div>
 
         <h1>
@@ -77,6 +82,66 @@
       </div>
 
       <div class="hero-side-note">CREATIVE DIGITAL PARTNER — EST. FOR GROWTH</div>
+      <a href="#story" class="hero-scroll" aria-label="Scroll to the story">SCROLL<i></i></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Strategy</span><i>✦</i><span>Design</span><i>✦</i><span>Development</span><i>✦</i><span>E-commerce</span><i>✦</i><span>Mobile Apps</span><i>✦</i><span>UI/UX</span><i>✦</i><span>Growth</span><i>✦</i>
+        </div>
+        <div class="marquee-group">
+          <span>Strategy</span><i>✦</i><span>Design</span><i>✦</i><span>Development</span><i>✦</i><span>E-commerce</span><i>✦</i><span>Mobile Apps</span><i>✦</i><span>UI/UX</span><i>✦</i><span>Growth</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAPTER 01 — THE CHALLENGE -->
+    <section class="story-problem section-space" id="story">
+      <div class="container problem-grid">
+        <div class="problem-intro">
+          <div class="chapter"><b>01</b> THE CHALLENGE</div>
+          <h2>Most digital projects don't fail on <span>technology.</span></h2>
+          <p>
+            They struggle because the "why" was never answered. A business
+            rushes to build, and ends up with something that works on paper
+            but doesn't work for people. We've seen the pattern — and we
+            think there's a better way to begin.
+          </p>
+        </div>
+
+        <div class="problem-list">
+          <article class="problem-card">
+            <span class="pc-num">01</span>
+            <div>
+              <h3>A website that looks good but says nothing.</h3>
+              <p>Beautiful pages with no clear message, no journey and no reason for a visitor to act.</p>
+            </div>
+          </article>
+
+          <article class="problem-card">
+            <span class="pc-num">02</span>
+            <div>
+              <h3>A product built before the problem was understood.</h3>
+              <p>Features added because they were possible, not because they were useful to real people.</p>
+            </div>
+          </article>
+
+          <article class="problem-card">
+            <span class="pc-num">03</span>
+            <div>
+              <h3>A big launch, and no plan for what comes next.</h3>
+              <p>Technology that can't grow, adapt or be maintained once the excitement fades.</p>
+            </div>
+          </article>
+
+          <div class="problem-turn">
+            <span>→</span>
+            So we start somewhere different: with your goals, your people and the question that matters.
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- INTRO / ABOUT PREVIEW -->
@@ -101,7 +166,7 @@
           </div>
 
           <div class="intro-content">
-            <div class="eyebrow"><span class="eyebrow-line"></span> WHO WE ARE</div>
+            <div class="chapter"><b>02</b> OUR BELIEF</div>
             <h2>We shape the right digital solution for your business.</h2>
             <p>
               Great digital experiences don't happen by accident. They come
@@ -144,11 +209,21 @@
       </div>
     </section>
 
+    <!-- STATS -->
+    <section class="stats-band">
+      <div class="container stats-grid">
+        <div class="stat"><strong data-count="3">0</strong><span>Disciplines, one team</span></div>
+        <div class="stat"><strong data-count="5">0</strong><span>Step collaborative process</span></div>
+        <div class="stat"><strong data-count="6">0</strong><span>Service areas covered</span></div>
+        <div class="stat"><strong data-count="1">0</strong><span>Partner from idea to launch</span></div>
+      </div>
+    </section>
+
     <!-- SERVICES -->
     <section class="services-section section-space" id="services">
       <div class="container">
         <div class="section-heading centered">
-          <div class="eyebrow"><span class="eyebrow-line"></span> WHAT WE DO</div>
+          <div class="chapter"><b>03</b> WHAT WE DO</div>
           <h2>Digital solutions for<br><span>ambitious businesses.</span></h2>
           <p>
             From a compelling online presence to custom digital products,
@@ -248,7 +323,7 @@
       <div class="container">
         <div class="work-heading">
           <div>
-            <div class="eyebrow"><span class="eyebrow-line"></span> SELECTED WORK</div>
+            <div class="chapter"><b>05</b> THE PROOF</div>
             <h2>Thoughtful work.<br><span>Meaningful outcomes.</span></h2>
           </div>
           <p>
@@ -321,43 +396,45 @@
     <section class="process-section section-space">
       <div class="container">
         <div class="section-heading">
-          <div class="eyebrow light-eyebrow"><span class="eyebrow-line"></span> HOW WE WORK</div>
+          <div class="chapter light"><b>04</b> HOW WE WORK</div>
           <h2>From the first idea<br>to the <span>final impact.</span></h2>
           <p>A transparent, collaborative process that keeps your goals at the centre of every decision.</p>
         </div>
 
         <div class="process-layout">
           <div class="process-steps">
-            <div class="process-step active">
+            <div class="process-step active" role="tab" tabindex="0" aria-selected="true" data-step="0">
               <span>01</span><strong>Discover</strong><span>↗</span>
             </div>
-            <div class="process-step">
+            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="1">
               <span>02</span><strong>Define & Strategize</strong><span>↗</span>
             </div>
-            <div class="process-step">
+            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="2">
               <span>03</span><strong>Design</strong><span>↗</span>
             </div>
-            <div class="process-step">
+            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="3">
               <span>04</span><strong>Develop</strong><span>↗</span>
             </div>
-            <div class="process-step">
+            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="4">
               <span>05</span><strong>Launch & Improve</strong><span>↗</span>
             </div>
           </div>
 
-          <div class="process-detail">
-            <span class="detail-number">01 / DISCOVER</span>
-            <h3>First, we listen. Then we build.</h3>
-            <p>
-              We get to know your business, audience, challenges and ambitions.
-              This gives us the context to make better decisions and define
-              what success should look like.
-            </p>
-            <ul class="check-list">
-              <li><span>✓</span> Understand your business objectives</li>
-              <li><span>✓</span> Identify user needs and opportunities</li>
-              <li><span>✓</span> Align on scope and priorities</li>
-            </ul>
+          <div class="process-detail" id="processDetail" aria-live="polite">
+            <div class="detail-body">
+              <span class="detail-number">01 / DISCOVER</span>
+              <h3>First, we listen. Then we build.</h3>
+              <p>
+                We get to know your business, audience, challenges and ambitions.
+                This gives us the context to make better decisions and define
+                what success should look like.
+              </p>
+              <ul class="check-list">
+                <li><span>✓</span> Understand your business objectives</li>
+                <li><span>✓</span> Identify user needs and opportunities</li>
+                <li><span>✓</span> Align on scope and priorities</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -464,7 +541,7 @@
     <section class="final-cta-section">
       <div class="container">
         <div class="final-cta">
-          <div class="eyebrow light-eyebrow"><span class="eyebrow-line"></span> HAVE A PROJECT IN MIND?</div>
+          <div class="chapter light"><b>06</b> YOUR CHAPTER STARTS HERE</div>
           <h2>Let's build something<br><span>that moves you forward.</span></h2>
           <p>Tell us what you're working towards. We'll help you explore the right digital direction.</p>
           <a href="contact.html" class="btn btn-gold">Let's Talk About Your Project <span>↗</span></a>
