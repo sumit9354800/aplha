@@ -1,469 +1,683 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Alpha Solution | Digital Experiences That Move Business</title>
-  <meta name="description" content="Alpha Solution helps businesses grow with strategic website development, web applications, mobile apps, UI/UX design and digital solutions." />
+    <title>Alpha Solution | Digital Experiences That Move Business</title>
+    <meta
+      name="description"
+      content="Alpha Solution helps businesses grow with strategic website development, web applications, mobile apps, UI/UX design and digital solutions."
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <meta name="theme-color" content="#191D27" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="premium.css" />
-  <script src="script.js" defer></script>
-</head>
+    <meta name="theme-color" content="#191D27" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="premium.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-<body>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <!-- Alpha Solution Logo -->
+        <a href="index.html" class="brand">
+          <img
+            src="assets/logo-black.png"
+            alt="Alpha Solution Logo"
+            class="brand-logo"
+          />
+        </a>
 
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-symbol">A<span>.</span></span>
-        <span class="brand-name">ALPHA <small>SOLUTION</small></span>
-      </a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About Us</a>
+          <!-- <a href="services.html">Services</a>
+      <a href="#work">Our Work</a> -->
+          <a href="contact.html">Contact</a>
 
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About Us</a>
-        <!-- <a href="services.html">Services</a>
-        <a href="#work">Our Work</a> -->
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="nav-cta">Let's Talk <span>↗</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-image" data-parallax="0.12"></div>
-      <div class="hero-shade"></div>
-      <span class="hero-orb orb-1"></span>
-      <span class="hero-orb orb-2"></span>
-
-      <div class="container hero-content">
-        <div class="eyebrow light-eyebrow">
-          <span class="eyebrow-line"></span>
-          PROLOGUE · DIGITAL THINKING. REAL-WORLD IMPACT.
-        </div>
-
-        <h1>
-          We turn bold ideas<br>
-          into <span>digital experiences.</span>
-        </h1>
-
-        <p class="hero-description">
-          We help ambitious businesses build a stronger digital presence
-          through thoughtful design, powerful technology and solutions
-          made for meaningful growth.
-        </p>
-
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-gold">Start a Project <span>↗</span></a>
-          <a href="#services" class="btn btn-outline-light">Explore What We Do <span>↓</span></a>
-        </div>
-
-        <div class="hero-bottom">
-          <span>STRATEGY · DESIGN · TECHNOLOGY</span>
-          <span>BUILT FOR WHAT'S NEXT</span>
-        </div>
+          <a href="contact.html" class="nav-cta"> Let's Talk <span>↗</span> </a>
+        </nav>
       </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-image" data-parallax="0.12"></div>
+        <div class="hero-shade"></div>
+        <span class="hero-orb orb-1"></span>
+        <span class="hero-orb orb-2"></span>
 
-      <div class="hero-side-note">CREATIVE DIGITAL PARTNER — EST. FOR GROWTH</div>
-      <a href="#story" class="hero-scroll" aria-label="Scroll to the story">SCROLL<i></i></a>
-    </section>
+        <div class="container hero-content">
+          <div class="eyebrow light-eyebrow">
+            <span class="eyebrow-line"></span>
+            PROLOGUE · DIGITAL THINKING. REAL-WORLD IMPACT.
+          </div>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <div class="marquee-group">
-          <span>Strategy</span><i>✦</i><span>Design</span><i>✦</i><span>Development</span><i>✦</i><span>E-commerce</span><i>✦</i><span>Mobile Apps</span><i>✦</i><span>UI/UX</span><i>✦</i><span>Growth</span><i>✦</i>
-        </div>
-        <div class="marquee-group">
-          <span>Strategy</span><i>✦</i><span>Design</span><i>✦</i><span>Development</span><i>✦</i><span>E-commerce</span><i>✦</i><span>Mobile Apps</span><i>✦</i><span>UI/UX</span><i>✦</i><span>Growth</span><i>✦</i>
-        </div>
-      </div>
-    </div>
+          <h1>
+            We turn bold ideas<br />
+            into <span>digital experiences.</span>
+          </h1>
 
-    <!-- CHAPTER 01 — THE CHALLENGE -->
-    <section class="story-problem section-space" id="story">
-      <div class="container problem-grid">
-        <div class="problem-intro">
-          <div class="chapter"><b>01</b> THE CHALLENGE</div>
-          <h2>Most digital projects don't fail on <span>technology.</span></h2>
-          <p>
-            They struggle because the "why" was never answered. A business
-            rushes to build, and ends up with something that works on paper
-            but doesn't work for people. We've seen the pattern — and we
-            think there's a better way to begin.
+          <p class="hero-description">
+            We help ambitious businesses build a stronger digital presence
+            through thoughtful design, powerful technology and solutions made
+            for meaningful growth.
           </p>
+
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-gold"
+              >Start a Project <span>↗</span></a
+            >
+            <a href="#services" class="btn btn-outline-light"
+              >Explore What We Do <span>↓</span></a
+            >
+          </div>
+
+          <div class="hero-bottom">
+            <span>STRATEGY · DESIGN · TECHNOLOGY</span>
+            <span>BUILT FOR WHAT'S NEXT</span>
+          </div>
         </div>
 
-        <div class="problem-list">
-          <article class="problem-card">
-            <span class="pc-num">01</span>
-            <div>
-              <h3>A website that looks good but says nothing.</h3>
-              <p>Beautiful pages with no clear message, no journey and no reason for a visitor to act.</p>
-            </div>
-          </article>
+        <div class="hero-side-note">
+          CREATIVE DIGITAL PARTNER — EST. FOR GROWTH
+        </div>
+        <a href="#story" class="hero-scroll" aria-label="Scroll to the story"
+          >SCROLL<i></i
+        ></a>
+      </section>
 
-          <article class="problem-card">
-            <span class="pc-num">02</span>
-            <div>
-              <h3>A product built before the problem was understood.</h3>
-              <p>Features added because they were possible, not because they were useful to real people.</p>
-            </div>
-          </article>
-
-          <article class="problem-card">
-            <span class="pc-num">03</span>
-            <div>
-              <h3>A big launch, and no plan for what comes next.</h3>
-              <p>Technology that can't grow, adapt or be maintained once the excitement fades.</p>
-            </div>
-          </article>
-
-          <div class="problem-turn">
-            <span>→</span>
-            So we start somewhere different: with your goals, your people and the question that matters.
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Strategy</span><i>✦</i><span>Design</span><i>✦</i
+            ><span>Development</span><i>✦</i><span>E-commerce</span><i>✦</i
+            ><span>Mobile Apps</span><i>✦</i><span>UI/UX</span><i>✦</i
+            ><span>Growth</span><i>✦</i>
+          </div>
+          <div class="marquee-group">
+            <span>Strategy</span><i>✦</i><span>Design</span><i>✦</i
+            ><span>Development</span><i>✦</i><span>E-commerce</span><i>✦</i
+            ><span>Mobile Apps</span><i>✦</i><span>UI/UX</span><i>✦</i
+            ><span>Growth</span><i>✦</i>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- INTRO / ABOUT PREVIEW -->
-    <section class="intro-section section-space">
-      <div class="container">
-        <div class="intro-grid">
-          <div class="intro-visual">
-            <img
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
-              alt="Creative team collaborating on a digital project"
-              loading="lazy"
-            />
-            <div class="visual-tag">
-              <span class="tag-dot"></span>
-              IDEAS INTO ACTION
-            </div>
-            <div class="visual-note">
-              <strong>Think.</strong>
-              <strong>Build.</strong>
-              <strong>Grow.</strong>
-            </div>
-          </div>
-
-          <div class="intro-content">
-            <div class="chapter"><b>02</b> OUR BELIEF</div>
-            <h2>We shape the right digital solution for your business.</h2>
+      <!-- CHAPTER 01 — THE CHALLENGE -->
+      <section class="story-problem section-space" id="story">
+        <div class="container problem-grid">
+          <div class="problem-intro">
+            <div class="chapter"><b>01</b> THE CHALLENGE</div>
+            <h2>
+              Most digital projects don't fail on <span>technology.</span>
+            </h2>
             <p>
-              Great digital experiences don't happen by accident. They come
-              from understanding people, identifying opportunities and
-              bringing design and technology together with purpose.
+              They struggle because the "why" was never answered. A business
+              rushes to build, and ends up with something that works on paper
+              but doesn't work for people. We've seen the pattern — and we think
+              there's a better way to begin.
             </p>
-            <p>
-              At Alpha Solution, we work alongside businesses to turn
-              challenges into clear digital experiences — from the first
-              idea to the final product and beyond.
-            </p>
-
-            <ul class="check-list">
-              <li><span>✓</span> Business-first digital strategy</li>
-              <li><span>✓</span> Design that puts people first</li>
-              <li><span>✓</span> Reliable, scalable technology</li>
-              <li><span>✓</span> A collaborative approach from start to finish</li>
-            </ul>
-
-            <a href="about.html" class="text-link">Discover Alpha Solution <span>↗</span></a>
-          </div>
-        </div>
-
-        <div class="intro-highlights">
-          <article>
-            <span class="highlight-number">01</span>
-            <div>
-              <h3>Purpose-led thinking</h3>
-              <p>We begin with your goals, your audience and the problem that matters.</p>
-            </div>
-          </article>
-          <article>
-            <span class="highlight-number">02</span>
-            <div>
-              <h3>Thoughtful execution</h3>
-              <p>Every detail is considered, from the first sketch to the final experience.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="stats-band">
-      <div class="container stats-grid">
-        <div class="stat"><strong data-count="3">0</strong><span>Disciplines, one team</span></div>
-        <div class="stat"><strong data-count="5">0</strong><span>Step collaborative process</span></div>
-        <div class="stat"><strong data-count="6">0</strong><span>Service areas covered</span></div>
-        <div class="stat"><strong data-count="1">0</strong><span>Partner from idea to launch</span></div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services-section section-space" id="services">
-      <div class="container">
-        <div class="section-heading centered">
-          <div class="chapter"><b>03</b> WHAT WE DO</div>
-          <h2>Digital solutions for<br><span>ambitious businesses.</span></h2>
-          <p>
-            From a compelling online presence to custom digital products,
-            we bring the right skills together to move your business forward.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <a href="services.html" class="service-card">
-            <div class="service-top"><span>01 / DIGITAL</span><span class="service-arrow">↗</span></div>
-            <div class="service-icon">⌘</div>
-            <h3>Website Development</h3>
-            <p>High-performing, responsive websites that communicate your value and turn visitors into customers.</p>
-            <div class="service-tags"><span>Business Websites</span><span>Landing Pages</span><span>CMS</span></div>
-            <span class="card-link">Explore service ↗</span>
-          </a>
-
-          <a href="services.html" class="service-card">
-            <div class="service-top"><span>02 / TECHNOLOGY</span><span class="service-arrow">↗</span></div>
-            <div class="service-icon">▧</div>
-            <h3>Web Applications</h3>
-            <p>Custom web platforms and applications designed around your workflows, users and business needs.</p>
-            <div class="service-tags"><span>Web Apps</span><span>Dashboards</span><span>Portals</span></div>
-            <span class="card-link">Explore service ↗</span>
-          </a>
-
-          <a href="services.html" class="service-card">
-            <div class="service-top"><span>03 / MOBILE</span><span class="service-arrow">↗</span></div>
-            <div class="service-icon">▣</div>
-            <h3>Mobile Applications</h3>
-            <p>Useful, intuitive mobile experiences that keep your products and services within easy reach.</p>
-            <div class="service-tags"><span>App Strategy</span><span>UI Design</span><span>Development</span></div>
-            <span class="card-link">Explore service ↗</span>
-          </a>
-
-          <a href="services.html" class="service-card">
-            <div class="service-top"><span>04 / EXPERIENCE</span><span class="service-arrow">↗</span></div>
-            <div class="service-icon">✳</div>
-            <h3>UI/UX Design</h3>
-            <p>Clear, engaging and user-focused interfaces that make complex interactions feel simple.</p>
-            <div class="service-tags"><span>Research</span><span>Wireframes</span><span>Prototypes</span></div>
-            <span class="card-link">Explore service ↗</span>
-          </a>
-
-          <a href="services.html" class="service-card">
-            <div class="service-top"><span>05 / E-COMMERCE</span><span class="service-arrow">↗</span></div>
-            <div class="service-icon">◇</div>
-            <h3>E-commerce Solutions</h3>
-            <p>Seamless online shopping experiences built to support your products, customers and operations.</p>
-            <div class="service-tags"><span>Online Stores</span><span>Payments</span><span>Integrations</span></div>
-            <span class="card-link">Explore service ↗</span>
-          </a>
-
-          <a href="services.html" class="service-card">
-            <div class="service-top"><span>06 / GROWTH</span><span class="service-arrow">↗</span></div>
-            <div class="service-icon">↗</div>
-            <h3>Digital Growth</h3>
-            <p>Build visibility and strengthen your digital presence with thoughtful growth-focused solutions.</p>
-            <div class="service-tags"><span>SEO</span><span>Optimization</span><span>Maintenance</span></div>
-            <span class="card-link">Explore service ↗</span>
-          </a>
-        </div>
-
-        <div class="section-bottom-link">
-          <a href="services.html" class="btn btn-dark">View All Services <span>↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAPABILITIES -->
-    <section class="capabilities-section section-space">
-      <div class="container capabilities-grid">
-        <div class="capabilities-content">
-          <div class="eyebrow light-eyebrow"><span class="eyebrow-line"></span> OUR CAPABILITIES</div>
-          <h2>More than development.<br><span>A complete digital partner.</span></h2>
-          <p>
-            A successful digital product needs more than good code.
-            It needs a clear direction, an intuitive experience and
-            technology that works together.
-          </p>
-          <a href="services.html" class="btn btn-gold">Explore Our Expertise <span>↗</span></a>
-        </div>
-
-        <div class="capability-list">
-          <div><span>01</span><strong>Digital Strategy & Consulting</strong><span>↗</span></div>
-          <div><span>02</span><strong>Website & Web App Development</strong><span>↗</span></div>
-          <div><span>03</span><strong>UI/UX & Product Design</strong><span>↗</span></div>
-          <div><span>04</span><strong>E-commerce & Integrations</strong><span>↗</span></div>
-          <div><span>05</span><strong>SEO & Digital Optimization</strong><span>↗</span></div>
-          <div><span>06</span><strong>Ongoing Support & Maintenance</strong><span>↗</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED WORK -->
-    <section class="work-section section-space" id="work">
-      <div class="container">
-        <div class="work-heading">
-          <div>
-            <div class="chapter"><b>05</b> THE PROOF</div>
-            <h2>Thoughtful work.<br><span>Meaningful outcomes.</span></h2>
-          </div>
-          <p>
-            Every project starts with a challenge. We bring strategy,
-            creativity and technology together to create a better way forward.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card project-large">
-            <a href="contact.html" class="project-image">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85" alt="Website analytics and digital dashboard concept" loading="lazy">
-              <span class="project-open">↗</span>
-            </a>
-            <div class="project-meta"><span>WEB DEVELOPMENT</span><span>01 / CONCEPT</span></div>
-            <h3>Digital experiences built around business goals.</h3>
-            <p>Strategy · Website · User Experience</p>
-          </article>
-
-          <article class="project-card">
-            <a href="contact.html" class="project-image">
-              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=85" alt="Mobile application interface concept" loading="lazy">
-              <span class="project-open">↗</span>
-            </a>
-            <div class="project-meta"><span>PRODUCT DESIGN</span><span>02 / CONCEPT</span></div>
-            <h3>Making digital products feel effortless.</h3>
-            <p>Product Thinking · UI/UX · Technology</p>
-          </article>
-        </div>
-
-        <p class="portfolio-disclaimer">
-          Portfolio previews are illustrative concepts. Replace these with verified client projects before launch.
-        </p>
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="why-section section-space">
-      <div class="container">
-        <div class="section-heading centered">
-          <div class="eyebrow"><span class="eyebrow-line"></span> THE ALPHA APPROACH</div>
-          <h2>Why businesses choose<br><span>to work with us.</span></h2>
-          <p>Good partnerships create better products. Here's what guides the way we work.</p>
-        </div>
-
-        <div class="why-grid">
-          <article class="why-card">
-            <span class="why-icon">◎</span>
-            <span class="why-index">01</span>
-            <h3>Business-first thinking</h3>
-            <p>We understand the bigger picture before recommending a digital solution.</p>
-          </article>
-          <article class="why-card">
-            <span class="why-icon">✳</span>
-            <span class="why-index">02</span>
-            <h3>Design with purpose</h3>
-            <p>We focus on clarity, usability and visual consistency — not decoration alone.</p>
-          </article>
-          <article class="why-card">
-            <span class="why-icon">⌘</span>
-            <span class="why-index">03</span>
-            <h3>Technology that scales</h3>
-            <p>We build with performance, maintainability and future growth in mind.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="process-section section-space">
-      <div class="container">
-        <div class="section-heading">
-          <div class="chapter light"><b>04</b> HOW WE WORK</div>
-          <h2>From the first idea<br>to the <span>final impact.</span></h2>
-          <p>A transparent, collaborative process that keeps your goals at the centre of every decision.</p>
-        </div>
-
-        <div class="process-layout">
-          <div class="process-steps">
-            <div class="process-step active" role="tab" tabindex="0" aria-selected="true" data-step="0">
-              <span>01</span><strong>Discover</strong><span>↗</span>
-            </div>
-            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="1">
-              <span>02</span><strong>Define & Strategize</strong><span>↗</span>
-            </div>
-            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="2">
-              <span>03</span><strong>Design</strong><span>↗</span>
-            </div>
-            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="3">
-              <span>04</span><strong>Develop</strong><span>↗</span>
-            </div>
-            <div class="process-step" role="tab" tabindex="0" aria-selected="false" data-step="4">
-              <span>05</span><strong>Launch & Improve</strong><span>↗</span>
-            </div>
           </div>
 
-          <div class="process-detail" id="processDetail" aria-live="polite">
-            <div class="detail-body">
-              <span class="detail-number">01 / DISCOVER</span>
-              <h3>First, we listen. Then we build.</h3>
+          <div class="problem-list">
+            <article class="problem-card">
+              <span class="pc-num">01</span>
+              <div>
+                <h3>A website that looks good but says nothing.</h3>
+                <p>
+                  Beautiful pages with no clear message, no journey and no
+                  reason for a visitor to act.
+                </p>
+              </div>
+            </article>
+
+            <article class="problem-card">
+              <span class="pc-num">02</span>
+              <div>
+                <h3>A product built before the problem was understood.</h3>
+                <p>
+                  Features added because they were possible, not because they
+                  were useful to real people.
+                </p>
+              </div>
+            </article>
+
+            <article class="problem-card">
+              <span class="pc-num">03</span>
+              <div>
+                <h3>A big launch, and no plan for what comes next.</h3>
+                <p>
+                  Technology that can't grow, adapt or be maintained once the
+                  excitement fades.
+                </p>
+              </div>
+            </article>
+
+            <div class="problem-turn">
+              <span>→</span>
+              So we start somewhere different: with your goals, your people and
+              the question that matters.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRO / ABOUT PREVIEW -->
+      <section class="intro-section section-space">
+        <div class="container">
+          <div class="intro-grid">
+            <div class="intro-visual">
+              <img
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
+                alt="Creative team collaborating on a digital project"
+                loading="lazy"
+              />
+              <div class="visual-tag">
+                <span class="tag-dot"></span>
+                IDEAS INTO ACTION
+              </div>
+              <div class="visual-note">
+                <strong>Think.</strong>
+                <strong>Build.</strong>
+                <strong>Grow.</strong>
+              </div>
+            </div>
+
+            <div class="intro-content">
+              <div class="chapter"><b>02</b> OUR BELIEF</div>
+              <h2>We shape the right digital solution for your business.</h2>
               <p>
-                We get to know your business, audience, challenges and ambitions.
-                This gives us the context to make better decisions and define
-                what success should look like.
+                Great digital experiences don't happen by accident. They come
+                from understanding people, identifying opportunities and
+                bringing design and technology together with purpose.
               </p>
+              <p>
+                At Alpha Solution, we work alongside businesses to turn
+                challenges into clear digital experiences — from the first idea
+                to the final product and beyond.
+              </p>
+
               <ul class="check-list">
-                <li><span>✓</span> Understand your business objectives</li>
-                <li><span>✓</span> Identify user needs and opportunities</li>
-                <li><span>✓</span> Align on scope and priorities</li>
+                <li><span>✓</span> Business-first digital strategy</li>
+                <li><span>✓</span> Design that puts people first</li>
+                <li><span>✓</span> Reliable, scalable technology</li>
+                <li>
+                  <span>✓</span> A collaborative approach from start to finish
+                </li>
               </ul>
+
+              <a href="about.html" class="text-link"
+                >Discover Alpha Solution <span>↗</span></a
+              >
+            </div>
+          </div>
+
+          <div class="intro-highlights">
+            <article>
+              <span class="highlight-number">01</span>
+              <div>
+                <h3>Purpose-led thinking</h3>
+                <p>
+                  We begin with your goals, your audience and the problem that
+                  matters.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="highlight-number">02</span>
+              <div>
+                <h3>Thoughtful execution</h3>
+                <p>
+                  Every detail is considered, from the first sketch to the final
+                  experience.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-band">
+        <div class="container stats-grid">
+          <div class="stat">
+            <strong data-count="3">0</strong><span>Disciplines, one team</span>
+          </div>
+          <div class="stat">
+            <strong data-count="5">0</strong
+            ><span>Step collaborative process</span>
+          </div>
+          <div class="stat">
+            <strong data-count="6">0</strong><span>Service areas covered</span>
+          </div>
+          <div class="stat">
+            <strong data-count="1">0</strong
+            ><span>Partner from idea to launch</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services-section section-space" id="services">
+        <div class="container">
+          <div class="section-heading centered">
+            <div class="chapter"><b>03</b> WHAT WE DO</div>
+            <h2>
+              Digital solutions for<br /><span>ambitious businesses.</span>
+            </h2>
+            <p>
+              From a compelling online presence to custom digital products, we
+              bring the right skills together to move your business forward.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <a href="services.html" class="service-card">
+              <div class="service-top">
+                <span>01 / DIGITAL</span><span class="service-arrow">↗</span>
+              </div>
+              <div class="service-icon">⌘</div>
+              <h3>Website Development</h3>
+              <p>
+                High-performing, responsive websites that communicate your value
+                and turn visitors into customers.
+              </p>
+              <div class="service-tags">
+                <span>Business Websites</span><span>Landing Pages</span
+                ><span>CMS</span>
+              </div>
+              <span class="card-link">Explore service ↗</span>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-top">
+                <span>02 / TECHNOLOGY</span><span class="service-arrow">↗</span>
+              </div>
+              <div class="service-icon">▧</div>
+              <h3>Web Applications</h3>
+              <p>
+                Custom web platforms and applications designed around your
+                workflows, users and business needs.
+              </p>
+              <div class="service-tags">
+                <span>Web Apps</span><span>Dashboards</span><span>Portals</span>
+              </div>
+              <span class="card-link">Explore service ↗</span>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-top">
+                <span>03 / MOBILE</span><span class="service-arrow">↗</span>
+              </div>
+              <div class="service-icon">▣</div>
+              <h3>Mobile Applications</h3>
+              <p>
+                Useful, intuitive mobile experiences that keep your products and
+                services within easy reach.
+              </p>
+              <div class="service-tags">
+                <span>App Strategy</span><span>UI Design</span
+                ><span>Development</span>
+              </div>
+              <span class="card-link">Explore service ↗</span>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-top">
+                <span>04 / EXPERIENCE</span><span class="service-arrow">↗</span>
+              </div>
+              <div class="service-icon">✳</div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Clear, engaging and user-focused interfaces that make complex
+                interactions feel simple.
+              </p>
+              <div class="service-tags">
+                <span>Research</span><span>Wireframes</span
+                ><span>Prototypes</span>
+              </div>
+              <span class="card-link">Explore service ↗</span>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-top">
+                <span>05 / E-COMMERCE</span><span class="service-arrow">↗</span>
+              </div>
+              <div class="service-icon">◇</div>
+              <h3>E-commerce Solutions</h3>
+              <p>
+                Seamless online shopping experiences built to support your
+                products, customers and operations.
+              </p>
+              <div class="service-tags">
+                <span>Online Stores</span><span>Payments</span
+                ><span>Integrations</span>
+              </div>
+              <span class="card-link">Explore service ↗</span>
+            </a>
+
+            <a href="services.html" class="service-card">
+              <div class="service-top">
+                <span>06 / GROWTH</span><span class="service-arrow">↗</span>
+              </div>
+              <div class="service-icon">↗</div>
+              <h3>Digital Growth</h3>
+              <p>
+                Build visibility and strengthen your digital presence with
+                thoughtful growth-focused solutions.
+              </p>
+              <div class="service-tags">
+                <span>SEO</span><span>Optimization</span
+                ><span>Maintenance</span>
+              </div>
+              <span class="card-link">Explore service ↗</span>
+            </a>
+          </div>
+
+          <div class="section-bottom-link">
+            <a href="services.html" class="btn btn-dark"
+              >View All Services <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CAPABILITIES -->
+      <section class="capabilities-section section-space">
+        <div class="container capabilities-grid">
+          <div class="capabilities-content">
+            <div class="eyebrow light-eyebrow">
+              <span class="eyebrow-line"></span> OUR CAPABILITIES
+            </div>
+            <h2>
+              More than development.<br /><span
+                >A complete digital partner.</span
+              >
+            </h2>
+            <p>
+              A successful digital product needs more than good code. It needs a
+              clear direction, an intuitive experience and technology that works
+              together.
+            </p>
+            <a href="services.html" class="btn btn-gold"
+              >Explore Our Expertise <span>↗</span></a
+            >
+          </div>
+
+          <div class="capability-list">
+            <div>
+              <span>01</span><strong>Digital Strategy & Consulting</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>02</span><strong>Website & Web App Development</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>03</span><strong>UI/UX & Product Design</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>04</span><strong>E-commerce & Integrations</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>05</span><strong>SEO & Digital Optimization</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>06</span><strong>Ongoing Support & Maintenance</strong
+              ><span>↗</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- RESULTS / VALUE -->
-    <section class="results-section">
-      <div class="container results-grid">
-        <div>
-          <div class="eyebrow"><span class="eyebrow-line"></span> BUILT AROUND VALUE</div>
-          <h2>Built around what<br><span>actually moves the needle.</span></h2>
-          <p>
-            We don't measure a digital project by how it looks alone.
-            We care about the experience it creates and the business
-            problem it helps solve.
+      <!-- FEATURED WORK -->
+      <section class="work-section section-space" id="work">
+        <div class="container">
+          <div class="work-heading">
+            <div>
+              <div class="chapter"><b>05</b> THE PROOF</div>
+              <h2>Thoughtful work.<br /><span>Meaningful outcomes.</span></h2>
+            </div>
+            <p>
+              Every project starts with a challenge. We bring strategy,
+              creativity and technology together to create a better way forward.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-large">
+              <a href="contact.html" class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
+                  alt="Website analytics and digital dashboard concept"
+                  loading="lazy"
+                />
+                <span class="project-open">↗</span>
+              </a>
+              <div class="project-meta">
+                <span>WEB DEVELOPMENT</span><span>01 / CONCEPT</span>
+              </div>
+              <h3>Digital experiences built around business goals.</h3>
+              <p>Strategy · Website · User Experience</p>
+            </article>
+
+            <article class="project-card">
+              <a href="contact.html" class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=85"
+                  alt="Mobile application interface concept"
+                  loading="lazy"
+                />
+                <span class="project-open">↗</span>
+              </a>
+              <div class="project-meta">
+                <span>PRODUCT DESIGN</span><span>02 / CONCEPT</span>
+              </div>
+              <h3>Making digital products feel effortless.</h3>
+              <p>Product Thinking · UI/UX · Technology</p>
+            </article>
+          </div>
+
+          <p class="portfolio-disclaimer">
+            Portfolio previews are illustrative concepts. Replace these with
+            verified client projects before launch.
           </p>
         </div>
+      </section>
 
-        <div class="result-points">
-          <div><span>01</span><strong>Clearer digital presence</strong><span>↗</span></div>
-          <div><span>02</span><strong>Better customer experiences</strong><span>↗</span></div>
-          <div><span>03</span><strong>Smarter business workflows</strong><span>↗</span></div>
-          <div><span>04</span><strong>Technology ready to grow</strong><span>↗</span></div>
+      <!-- WHY CHOOSE US -->
+      <section class="why-section section-space">
+        <div class="container">
+          <div class="section-heading centered">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> THE ALPHA APPROACH
+            </div>
+            <h2>Why businesses choose<br /><span>to work with us.</span></h2>
+            <p>
+              Good partnerships create better products. Here's what guides the
+              way we work.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-card">
+              <span class="why-icon">◎</span>
+              <span class="why-index">01</span>
+              <h3>Business-first thinking</h3>
+              <p>
+                We understand the bigger picture before recommending a digital
+                solution.
+              </p>
+            </article>
+            <article class="why-card">
+              <span class="why-icon">✳</span>
+              <span class="why-index">02</span>
+              <h3>Design with purpose</h3>
+              <p>
+                We focus on clarity, usability and visual consistency — not
+                decoration alone.
+              </p>
+            </article>
+            <article class="why-card">
+              <span class="why-icon">⌘</span>
+              <span class="why-index">03</span>
+              <h3>Technology that scales</h3>
+              <p>
+                We build with performance, maintainability and future growth in
+                mind.
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- TEAM PREVIEW -->
-    <!-- <section class="team-section section-space">
+      <!-- PROCESS -->
+      <section class="process-section section-space">
+        <div class="container">
+          <div class="section-heading">
+            <div class="chapter light"><b>04</b> HOW WE WORK</div>
+            <h2>From the first idea<br />to the <span>final impact.</span></h2>
+            <p>
+              A transparent, collaborative process that keeps your goals at the
+              centre of every decision.
+            </p>
+          </div>
+
+          <div class="process-layout">
+            <div class="process-steps">
+              <div
+                class="process-step active"
+                role="tab"
+                tabindex="0"
+                aria-selected="true"
+                data-step="0"
+              >
+                <span>01</span><strong>Discover</strong><span>↗</span>
+              </div>
+              <div
+                class="process-step"
+                role="tab"
+                tabindex="0"
+                aria-selected="false"
+                data-step="1"
+              >
+                <span>02</span><strong>Define & Strategize</strong
+                ><span>↗</span>
+              </div>
+              <div
+                class="process-step"
+                role="tab"
+                tabindex="0"
+                aria-selected="false"
+                data-step="2"
+              >
+                <span>03</span><strong>Design</strong><span>↗</span>
+              </div>
+              <div
+                class="process-step"
+                role="tab"
+                tabindex="0"
+                aria-selected="false"
+                data-step="3"
+              >
+                <span>04</span><strong>Develop</strong><span>↗</span>
+              </div>
+              <div
+                class="process-step"
+                role="tab"
+                tabindex="0"
+                aria-selected="false"
+                data-step="4"
+              >
+                <span>05</span><strong>Launch & Improve</strong><span>↗</span>
+              </div>
+            </div>
+
+            <div class="process-detail" id="processDetail" aria-live="polite">
+              <div class="detail-body">
+                <span class="detail-number">01 / DISCOVER</span>
+                <h3>First, we listen. Then we build.</h3>
+                <p>
+                  We get to know your business, audience, challenges and
+                  ambitions. This gives us the context to make better decisions
+                  and define what success should look like.
+                </p>
+                <ul class="check-list">
+                  <li><span>✓</span> Understand your business objectives</li>
+                  <li><span>✓</span> Identify user needs and opportunities</li>
+                  <li><span>✓</span> Align on scope and priorities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS / VALUE -->
+      <section class="results-section">
+        <div class="container results-grid">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> BUILT AROUND VALUE
+            </div>
+            <h2>
+              Built around what<br /><span>actually moves the needle.</span>
+            </h2>
+            <p>
+              We don't measure a digital project by how it looks alone. We care
+              about the experience it creates and the business problem it helps
+              solve.
+            </p>
+          </div>
+
+          <div class="result-points">
+            <div>
+              <span>01</span><strong>Clearer digital presence</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>02</span><strong>Better customer experiences</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>03</span><strong>Smarter business workflows</strong
+              ><span>↗</span>
+            </div>
+            <div>
+              <span>04</span><strong>Technology ready to grow</strong
+              ><span>↗</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM PREVIEW -->
+      <!-- <section class="team-section section-space">
       <div class="container">
         <div class="section-heading centered">
           <div class="eyebrow"><span class="eyebrow-line"></span> THE PEOPLE BEHIND THE WORK</div>
@@ -498,109 +712,150 @@
       </div>
     </section> -->
 
-    <!-- TESTIMONIALS -->
-    <section class="testimonial-section section-space">
+      <!-- TESTIMONIALS -->
+      <section class="testimonial-section section-space">
+        <div class="container">
+          <div class="section-heading centered">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> CLIENT PERSPECTIVES
+            </div>
+            <h2>
+              Good work is better<br /><span>when it works for people.</span>
+            </h2>
+          </div>
+
+          <div class="testimonial-placeholder">
+            <span class="quote-mark">“</span>
+            <p>
+              The best partnerships are built on trust, clear communication and
+              a shared commitment to doing meaningful work.
+            </p>
+            <span class="testimonial-note"
+              >CLIENT TESTIMONIALS WILL BE ADDED HERE</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- CLIENT / INDUSTRY STRIP -->
+      <section class="engagement-section section-space">
+        <div class="container">
+          <div class="section-heading centered">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span> WHERE WE CREATE VALUE
+            </div>
+            <h2>
+              Digital solutions for<br /><span>different ambitions.</span>
+            </h2>
+            <p>
+              We work across different business needs, bringing the right
+              approach to every challenge.
+            </p>
+          </div>
+
+          <div class="industry-grid">
+            <div>
+              <span>01</span><strong>Startups & New Ventures</strong>
+              <p>Build a strong digital foundation.</p>
+            </div>
+            <div>
+              <span>02</span><strong>Growing Businesses</strong>
+              <p>Improve and expand your digital presence.</p>
+            </div>
+            <div>
+              <span>03</span><strong>Education</strong>
+              <p>Create useful digital learning experiences.</p>
+            </div>
+            <div>
+              <span>04</span><strong>E-commerce</strong>
+              <p>Make online customer journeys better.</p>
+            </div>
+            <div>
+              <span>05</span><strong>Professional Services</strong>
+              <p>Communicate expertise with clarity.</p>
+            </div>
+            <div>
+              <span>06</span><strong>Established Enterprises</strong>
+              <p>Build tools that support complex needs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="final-cta-section">
+        <div class="container">
+          <div class="final-cta">
+            <div class="chapter light"><b>06</b> YOUR CHAPTER STARTS HERE</div>
+            <h2>
+              Let's build something<br /><span>that moves you forward.</span>
+            </h2>
+            <p>
+              Tell us what you're working towards. We'll help you explore the
+              right digital direction.
+            </p>
+            <a href="contact.html" class="btn btn-gold"
+              >Let's Talk About Your Project <span>↗</span></a
+            >
+            <span class="cta-decoration">A.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
       <div class="container">
-        <div class="section-heading centered">
-          <div class="eyebrow"><span class="eyebrow-line"></span> CLIENT PERSPECTIVES</div>
-          <h2>Good work is better<br><span>when it works for people.</span></h2>
+        <div class="footer-main">
+          <div class="footer-about">
+            <a href="index.html" class="brand footer-brand">
+              <span class="brand-symbol">A<span>.</span></span>
+              <span class="brand-name">ALPHA <small>SOLUTION</small></span>
+            </a>
+            <p>
+              We bring strategy, design and technology together to create
+              digital experiences that help businesses move forward.
+            </p>
+            <a href="contact.html" class="footer-email"
+              >Let's create something meaningful ↗</a
+            >
+          </div>
+
+          <div class="footer-column">
+            <h4>EXPLORE</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="#work">Our Work</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>SERVICES</h4>
+            <a href="services.html">Website Development</a>
+            <a href="services.html">Web Applications</a>
+            <a href="services.html">Mobile Applications</a>
+            <a href="services.html">UI/UX Design</a>
+            <a href="services.html">E-commerce</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>GET IN TOUCH</h4>
+            <a href="mailto:hello@alphasolution.com">hello@alphasolution.com</a>
+            <a href="contact.html">Discuss a project ↗</a>
+            <span>India · Working worldwide</span>
+          </div>
         </div>
 
-        <div class="testimonial-placeholder">
-          <span class="quote-mark">“</span>
-          <p>
-            The best partnerships are built on trust, clear communication
-            and a shared commitment to doing meaningful work.
-          </p>
-          <span class="testimonial-note">CLIENT TESTIMONIALS WILL BE ADDED HERE</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CLIENT / INDUSTRY STRIP -->
-    <section class="engagement-section section-space">
-      <div class="container">
-        <div class="section-heading centered">
-          <div class="eyebrow"><span class="eyebrow-line"></span> WHERE WE CREATE VALUE</div>
-          <h2>Digital solutions for<br><span>different ambitions.</span></h2>
-          <p>We work across different business needs, bringing the right approach to every challenge.</p>
-        </div>
-
-        <div class="industry-grid">
-          <div><span>01</span><strong>Startups & New Ventures</strong><p>Build a strong digital foundation.</p></div>
-          <div><span>02</span><strong>Growing Businesses</strong><p>Improve and expand your digital presence.</p></div>
-          <div><span>03</span><strong>Education</strong><p>Create useful digital learning experiences.</p></div>
-          <div><span>04</span><strong>E-commerce</strong><p>Make online customer journeys better.</p></div>
-          <div><span>05</span><strong>Professional Services</strong><p>Communicate expertise with clarity.</p></div>
-          <div><span>06</span><strong>Established Enterprises</strong><p>Build tools that support complex needs.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta-section">
-      <div class="container">
-        <div class="final-cta">
-          <div class="chapter light"><b>06</b> YOUR CHAPTER STARTS HERE</div>
-          <h2>Let's build something<br><span>that moves you forward.</span></h2>
-          <p>Tell us what you're working towards. We'll help you explore the right digital direction.</p>
-          <a href="contact.html" class="btn btn-gold">Let's Talk About Your Project <span>↗</span></a>
-          <span class="cta-decoration">A.</span>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-main">
-        <div class="footer-about">
-          <a href="index.html" class="brand footer-brand">
-            <span class="brand-symbol">A<span>.</span></span>
-            <span class="brand-name">ALPHA <small>SOLUTION</small></span>
-          </a>
-          <p>
-            We bring strategy, design and technology together to create
-            digital experiences that help businesses move forward.
-          </p>
-          <a href="contact.html" class="footer-email">Let's create something meaningful ↗</a>
-        </div>
-
-        <div class="footer-column">
-          <h4>EXPLORE</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="#work">Our Work</a>
-          <a href="contact.html">Contact</a>
-        </div>
-
-        <div class="footer-column">
-          <h4>SERVICES</h4>
-          <a href="services.html">Website Development</a>
-          <a href="services.html">Web Applications</a>
-          <a href="services.html">Mobile Applications</a>
-          <a href="services.html">UI/UX Design</a>
-          <a href="services.html">E-commerce</a>
-        </div>
-
-        <div class="footer-column">
-          <h4>GET IN TOUCH</h4>
-          <a href="mailto:hello@alphasolution.com">hello@alphasolution.com</a>
-          <a href="contact.html">Discuss a project ↗</a>
-          <span>India · Working worldwide</span>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year"></span> Alpha Solution. All rights
+            reserved.</span
+          >
+          <span>DESIGNED WITH PURPOSE. BUILT FOR GROWTH.</span>
+          <a href="#navbar">Back to top ↑</a>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <span>© <span id="year"></span> Alpha Solution. All rights reserved.</span>
-        <span>DESIGNED WITH PURPOSE. BUILT FOR GROWTH.</span>
-        <a href="#navbar">Back to top ↑</a>
-      </div>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
