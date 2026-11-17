@@ -523,6 +523,7 @@ body::before {
 
 .capability-list > div:hover {
   padding-left: 14px;
+  transition: padding-left .35s var(--ease), background .3s ease;
   background: rgba(255, 255, 255, .04);
 }
 
