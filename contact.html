@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact Us | Alpha Solution — Let's Build Something Better</title>
+  <meta name="description" content="Have a digital project in mind? Contact Alpha Solution to discuss website development, web applications, mobile apps, UI/UX design and digital solutions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-symbol">A<span>.</span></span>
+        <span class="brand-name">ALPHA <small>SOLUTION</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <!-- <a href="services.html">Services</a>
+        <a href="index.html#work">Our Work</a> -->
+        <a href="contact.html" class="active">Contact</a>
+        <a href="#contact-form" class="nav-cta">Let's Talk <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <div class="contact-hero-background"></div>
+      <div class="contact-hero-overlay"></div>
+
+      <div class="container contact-hero-content">
+        <div class="eyebrow contact-light-eyebrow">
+          <span class="eyebrow-line"></span>
+          LET'S START A CONVERSATION
+        </div>
+
+        <h1>
+          Good things<br>
+          start with a<br>
+          <span>hello.</span>
+        </h1>
+
+        <p>
+          Have a project in mind, a challenge to solve or simply an idea
+          you'd like to explore? We'd love to hear about it.
+        </p>
+
+        <a href="#contact-form" class="btn btn-gold">
+          Tell Us About Your Project <span>↓</span>
+        </a>
+      </div>
+
+      <div class="contact-hero-bottom">
+        <span>YOUR IDEA IS THE STARTING POINT.</span>
+        <span>01 — GET IN TOUCH</span>
+      </div>
+    </section>
+
+    <!-- CONTACT INTRO -->
+    <section class="contact-intro section-space">
+      <div class="container contact-intro-grid">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            WE'RE ALL EARS
+          </div>
+
+          <h2>
+            Let's talk about<br>
+            <span>what's next for you.</span>
+          </h2>
+        </div>
+
+        <div class="contact-intro-copy">
+          <p>
+            Every great project begins with a conversation. Tell us what
+            you're trying to achieve, what's not working or what you'd
+            love to create.
+          </p>
+
+          <p>
+            We'll take the time to understand your requirements and
+            explore how the right combination of strategy, design and
+            technology can help.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT DETAILS + FORM -->
+    <section class="contact-main-section" id="contact-form">
+      <div class="container contact-main-grid">
+
+        <!-- CONTACT INFORMATION -->
+        <aside class="contact-information">
+          <div class="eyebrow contact-light-eyebrow">
+            <span class="eyebrow-line"></span>
+            REACH OUT
+          </div>
+
+          <h2>Let's make<br><span>something happen.</span></h2>
+
+          <p class="contact-info-description">
+            Choose the easiest way to reach us, or share your project
+            details using the enquiry form.
+          </p>
+
+          <div class="contact-methods">
+
+            <a href="mailto:hello@alphasolution.com" class="contact-method">
+              <span class="contact-method-icon">↗</span>
+              <span class="contact-method-content">
+                <small>EMAIL US</small>
+                <strong>hello@alphasolution.com</strong>
+                <span>Send us your project details</span>
+              </span>
+              <span class="contact-method-arrow">↗</span>
+            </a>
+
+            <div class="contact-method">
+              <span class="contact-method-icon">◎</span>
+              <span class="contact-method-content">
+                <small>OUR LOCATION</small>
+                <strong>India</strong>
+                <span>Working with clients worldwide</span>
+              </span>
+            </div>
+
+            <div class="contact-method">
+              <span class="contact-method-icon">◷</span>
+              <span class="contact-method-content">
+                <small>WORKING HOURS</small>
+                <strong>Monday – Saturday</strong>
+                <span>We'll get back to you as soon as possible</span>
+              </span>
+            </div>
+
+          </div>
+
+          <div class="contact-social">
+            <span>LET'S CONNECT</span>
+            <div>
+              <!-- Replace # with your real social profile URLs -->
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="Instagram">ig</a>
+              <a href="#" aria-label="Facebook">fb</a>
+            </div>
+          </div>
+
+          <div class="contact-side-decoration">A.</div>
+        </aside>
+
+        <!-- ENQUIRY FORM -->
+        <div class="contact-form-wrapper">
+          <div class="contact-form-heading">
+            <span class="form-step-label">PROJECT ENQUIRY / 01</span>
+            <h2>Tell us a little about your project.</h2>
+            <p>
+              Share a few details below. The more we understand,
+              the better we can help.
+            </p>
+          </div>
+
+          <form class="project-contact-form" id="projectContactForm">
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fullName">Your name <span>*</span></label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="name"
+                  placeholder="e.g. Alex Morgan"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="companyName">Company name</label>
+                <input
+                  type="text"
+                  id="companyName"
+                  name="company"
+                  placeholder="Your company or brand"
+                  autocomplete="organization"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="emailAddress">Email address <span>*</span></label>
+                <input
+                  type="email"
+                  id="emailAddress"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="phoneNumber">Phone number</label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phone"
+                  placeholder="+91 00000 00000"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="service">What do you need help with? <span>*</span></label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Web Application">Web Application</option>
+                <option value="Mobile Application">Mobile Application</option>
+                <option value="E-commerce Development">E-commerce Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Branding & Creative Design">Branding & Creative Design</option>
+                <option value="SEO & Digital Growth">SEO & Digital Growth</option>
+                <option value="Website Maintenance">Website Maintenance</option>
+                <option value="Other">Something Else</option>
+              </select>
+            </div>
+<!-- 
+            <div class="form-row">
+              <div class="form-field">
+                <label for="budget">Estimated project budget</label>
+                <select id="budget" name="budget">
+                  <option value="" selected>Select your budget</option>
+                  <option value="Under ₹25,000">Under ₹25,000</option>
+                  <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                  <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                  <option value="₹1,00,000 – ₹3,00,000">₹1,00,000 – ₹3,00,000</option>
+                  <option value="Above ₹3,00,000">Above ₹3,00,000</option>
+                  <option value="Not decided yet">Not decided yet</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="timeline">When would you like to start?</label>
+                <select id="timeline" name="timeline">
+                  <option value="" selected>Select a timeline</option>
+                  <option value="Immediately">Immediately</option>
+                  <option value="Within 2–4 weeks">Within 2–4 weeks</option>
+                  <option value="Within 1–3 months">Within 1–3 months</option>
+                  <option value="Later">Later</option>
+                  <option value="Just exploring">Just exploring</option>
+                </select>
+              </div>
+            </div> -->
+
+            <div class="form-field">
+              <label for="projectDetails">Tell us about your project <span>*</span></label>
+              <textarea
+                id="projectDetails"
+                name="message"
+                rows="5"
+                placeholder="What are you looking to build? What problem are you trying to solve?"
+                required
+              ></textarea>
+            </div>
+
+            <label class="form-consent">
+              <input type="checkbox" id="formConsent" required />
+              <span>
+                I agree to be contacted by Alpha Solution regarding
+                my enquiry.
+              </span>
+            </label>
+
+            <button type="submit" class="btn btn-gold contact-submit-btn">
+              Send Project Enquiry <span>↗</span>
+            </button>
+
+            <p class="form-disclaimer">
+              Your information will only be used to respond to your enquiry.
+            </p>
+
+            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHAT HAPPENS NEXT -->
+    <section class="contact-process section-space">
+      <div class="container">
+
+        <div class="contact-process-heading">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span>
+              AFTER YOU REACH OUT
+            </div>
+            <h2>Simple steps.<br><span>Clear communication.</span></h2>
+          </div>
+
+          <p>
+            We want the process to feel straightforward from the very
+            first conversation. Here's what you can expect.
+          </p>
+        </div>
+
+        <div class="contact-process-grid">
+
+          <article class="contact-process-card">
+            <span class="contact-process-number">01</span>
+            <div class="contact-process-icon">↗</div>
+            <h3>You share your idea.</h3>
+            <p>
+              Tell us about your business, your requirements and
+              what you want to achieve.
+            </p>
+          </article>
+
+          <article class="contact-process-card">
+            <span class="contact-process-number">02</span>
+            <div class="contact-process-icon">◎</div>
+            <h3>We understand your needs.</h3>
+            <p>
+              We review your enquiry and discuss the details,
+              goals and possible direction.
+            </p>
+          </article>
+
+          <article class="contact-process-card">
+            <span class="contact-process-number">03</span>
+            <div class="contact-process-icon">✳</div>
+            <h3>We plan the next step.</h3>
+            <p>
+              If there's a good fit, we'll discuss a suitable
+              approach, scope and way forward.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-faq section-space">
+      <div class="container contact-faq-grid">
+
+        <div class="contact-faq-intro">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            GOOD TO KNOW
+          </div>
+
+          <h2>A few things<br><span>you might be wondering.</span></h2>
+
+          <p>
+            Have another question? Send us a message and we'll be
+            happy to discuss it.
+          </p>
+
+          <a href="mailto:hello@alphasolution.com" class="text-link">
+            Ask us directly <span>↗</span>
+          </a>
+        </div>
+
+        <div class="contact-faq-list">
+
+          <details class="contact-faq-item">
+            <summary>
+              What kind of businesses do you work with?
+              <span>+</span>
+            </summary>
+            <p>
+              We can work with startups, growing businesses,
+              educational institutions, e-commerce brands and
+              organisations looking for digital solutions.
+            </p>
+          </details>
+
+          <details class="contact-faq-item">
+            <summary>
+              How do I get a project estimate?
+              <span>+</span>
+            </summary>
+            <p>
+              Share your requirements through the enquiry form.
+              Once we understand the scope, features and expectations,
+              we can discuss an appropriate estimate.
+            </p>
+          </details>
+
+          <details class="contact-faq-item">
+            <summary>
+              Can you work with clients outside India?
+              <span>+</span>
+            </summary>
+            <p>
+              Yes. We are open to discussing projects with clients
+              from different locations and can collaborate remotely.
+            </p>
+          </details>
+
+          <details class="contact-faq-item">
+            <summary>
+              Can you help after the project goes live?
+              <span>+</span>
+            </summary>
+            <p>
+              We can discuss ongoing maintenance, improvements,
+              technical support and future development depending
+              on your project requirements.
+            </p>
+          </details>
+
+          <details class="contact-faq-item">
+            <summary>
+              What if I only have an idea and no clear plan?
+              <span>+</span>
+            </summary>
+            <p>
+              That's completely fine. Tell us what you're thinking
+              about, and we can explore the requirements and possible
+              direction together.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="contact-final-cta">
+      <div class="container">
+        <div class="contact-cta-panel">
+          <span class="contact-cta-overline">THE NEXT MOVE IS YOURS</span>
+
+          <h2>
+            Your next big idea<br>
+            <span>deserves a conversation.</span>
+          </h2>
+
+          <p>
+            Let's discuss what's possible and find the right way
+            to bring your vision to life.
+          </p>
+
+          <a href="#contact-form" class="btn btn-gold">
+            Start Your Project <span>↗</span>
+          </a>
+
+          <span class="contact-cta-mark">A.</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+
+        <div class="footer-about">
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-symbol">A<span>.</span></span>
+            <span class="brand-name">ALPHA <small>SOLUTION</small></span>
+          </a>
+
+          <p>
+            We bring strategy, design and technology together to create
+            digital experiences that help businesses move forward.
+          </p>
+
+          <a href="mailto:hello@alphasolution.com" class="footer-email">
+            Let's create something meaningful ↗
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <h4>EXPLORE</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#work">Our Work</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>SERVICES</h4>
+          <a href="services.html">Website Development</a>
+          <a href="services.html">Web Applications</a>
+          <a href="services.html">Mobile Applications</a>
+          <a href="services.html">UI/UX Design</a>
+          <a href="services.html">E-commerce</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>GET IN TOUCH</h4>
+          <a href="mailto:hello@alphasolution.com">hello@alphasolution.com</a>
+          <a href="#contact-form">Discuss a project ↗</a>
+          <span>India · Working worldwide</span>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Alpha Solution. All rights reserved.</span>
+        <span>DESIGNED WITH PURPOSE. BUILT FOR GROWTH.</span>
+        <a href="#navbar">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
